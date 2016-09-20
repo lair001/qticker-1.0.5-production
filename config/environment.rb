@@ -1,5 +1,15 @@
-require 'bundler/setup'
-Bundler.require(:default)
+require 'nokogiri'
+require 'require_all'
+require 'word_wrap'
 require 'open-uri'
 require 'word_wrap/core_ext'
-require_all 'lib'
+
+require_relative '../lib/cli.rb'
+require_relative '../lib/table.rb'
+require_relative '../lib/stock_attr.rb'
+require_relative '../lib/desc.rb'
+require_relative '../lib/dev_cli.rb'
+require_relative '../lib/main_cli.rb'
+require_relative '../lib/quote.rb'
+require_relative '../lib/scraper.rb'
+require_relative '../lib/stock.rb'
